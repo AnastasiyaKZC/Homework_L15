@@ -8,7 +8,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 # Фикстура с параметризацией для разных размеров окна
-@pytest.fixture(params=[(1920, 1080), (1366, 768), (375, 812), (414, 896)])
+@pytest.fixture()
 def browser(request):
     driver = webdriver.Chrome()
     width, height = request.param  # Получаем параметры (ширина и высота)
