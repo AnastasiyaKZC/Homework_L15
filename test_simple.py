@@ -3,6 +3,7 @@ import random
 
 import pytest
 import time
+from selenium.webdriver.common.by import By
 
 # pytestmark = pytest.mark.skip(reason="TASK-1234 Тест нестабильный потому что время от времени не хватает таймаута")
 
